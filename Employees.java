@@ -6,7 +6,7 @@ public class Employees {
 	private double salary;
 	
 	public Employees(int empid, String name, double salary) {
-		super();
+		//super();
 		this.empid = empid;
 		this.name = name;
 		this.salary = salary;
@@ -22,19 +22,50 @@ public class Employees {
 	
  //classname objectname=new classname();
 		//new Employees();
+		Employees e1=new Employees(1,"amit",20000);
 		Employees[] emp=new Employees[3];//memory allocation
-	 emp[0]=new Employees(1,"amit",20000);
+	 emp[0]=e1;
 	 emp[1]=new Employees(3,"amar",50000);
 	 emp[2]=new Employees(2,"sumit",40000);
 	 
-	 
-	 for(int i=emp.length-1;i>=0;i--)
+	 System.out.println("Before Sorting");
+	 for(int i=0;i<emp.length;i++)
 	 {
-		
-	 System.out.println(emp[i]);
+		 System.out.println(emp[i]);
+	 }
+	//sorting according to salary
+	 for(int i=0;i<emp.length;i++)
+	 {
+		for(int j=i+1;j<emp.length;j++)
+		{
+			if(emp[i].salary<emp[j].salary)
+			{
+			//salary
+					/*
+					 * double temp=emp[i].salary; emp[i].salary=emp[j].salary; emp[j].salary=temp;
+					 * 
+					 * //name String t=emp[i].name; emp[i].name=emp[j].name; emp[j].name=t;
+					 * 
+					 * //id
+					 * 
+					 * int tem=emp[i].empid; emp[i].empid=emp[j].empid; emp[j].empid=tem;
+					 */
+				
+			Employees temp=emp[i];
+			emp[i]=emp[j];
+			emp[j]=temp;
+			}
+			
+				
+		}
+	 
 	 
 	 }
-		
+		System.out.println("After Sorting");
+	 for(int i=0;i<emp.length;i++)
+	 {
+		 System.out.println(emp[i]);
+	 }
 		
 		}
 		

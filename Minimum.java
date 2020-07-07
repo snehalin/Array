@@ -3,9 +3,7 @@ public class Minimum {
 
 	public static void main(String[] args) {
 		
-		int arr[]= 
-			
-			{20,4,6,1,89,8};
+		int arr[]= {20,4,6,1,89,8};
 		
 		int smallest=arr[0];//20
 		
