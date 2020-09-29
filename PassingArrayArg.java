@@ -1,43 +1,29 @@
-import java.util.Arrays;
 
 public class PassingArrayArg {
-	void demo(int b[])
+
+	void display(int a[])
 	{
-		
-		
-		  for(int i=0;i<b.length;i++) { System.out.println(b[i]); }
-		 
-		
-	//	System.out.println(Arrays.toString(b));
-	}
-	double avg(int a[])
-	{
-		double sum=0;
 		for(int i=0;i<a.length;i++)
 		{
-			sum=sum+a[i];
+			System.out.println(a[i]);
 		}
-		
-		double average=sum/a.length;
-		return average;
 	}
 	
-	int[] addTen(int a[])
+	int[] method()
 	{
-		for(int i=0;i<a.length;i++)
-		{
-		a[i]=a[i]+10;	
-		}
-		return a;
+		int c[]= {11,12,13,14};
+		return c;
 	}
-		public static void main(String[] args) {
-		int a[]= {1,2,3,4,5,6};
-		PassingArrayArg ob=new PassingArrayArg();
-		ob.demo(a);
-		double result=ob.avg(a);
-		System.out.println("Result="+result);
-		a=ob.addTen(a);
-		System.out.println(Arrays.toString(a));
+	
+	
+	
+	
+	public static void main(String[] args) {
+		int b[]= {1,2,3,4,5,6};
+		PassingArrayArg obj=new PassingArrayArg();
+		obj.display(b);//b[] or b
+       int x[]= obj.method();//b=obj.method();
+       obj.display(x);
 	}
 
 }
