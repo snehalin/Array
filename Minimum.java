@@ -2,20 +2,22 @@
 public class Minimum {
 
 	public static void main(String[] args) {
-		
-		int arr[]= {20,4,6,1,89,8};
-		
-		int smallest=arr[0];//20
-		
-		for(int i=1;i<arr.length;i++)
-		{
-			if(arr[i]<smallest)
-			{
-				smallest=arr[i];
-			}
-		}
-		
-		System.out.println("Smallest="+smallest);
+		       //0   1 2 
+		int a[]= {7 ,6,9,5,1,78,45};
+        int small=a[0];//7
+        int large=a[0];
+        for(int i=1;i<a.length;i++)// 
+        {   // System.out.println("i= "+i+" small= "+small);
+        	if(a[i]<small)
+        	{
+        		small=a[i];   
+        	}
+        	if(a[i]>large)
+        	{
+        		large=a[i];
+        	}
+        }
+        System.out.println("Smallest Element="+small+"\n Largest="+large);
 	}
 
 }
