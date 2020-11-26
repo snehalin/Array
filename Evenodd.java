@@ -14,7 +14,7 @@ public static void main(String args[])
 			System.out.println(a[i]);
 		}
 	}
-	//i=
+	
 	
 	System.out.println("total number divided by 3 and 7= "+cnt);
 }
