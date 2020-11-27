@@ -1,56 +1,43 @@
 
 public class Employee {
+private int eid;
+private String ename;
+private double salary;
+public Employee(int eid, String ename,double salary) {
+	super();
+	this.eid = eid;
+	this.ename = ename;
+	this.salary=salary;
+}
+//setter getter
 
-	private String name;
-private	double salary;
-		
-	public Employee(String name, double salary) {
-		super();
-		this.name = name;
-		this.salary = salary;
-	}
-   
-	
-	public String getName() {
-		return name;
-	}
+@Override
+public String toString() {
+	return "Employee [eid=" + eid + ", ename=" + ename + ", salary=" + salary + "]";
+}
 
+public int getEid() {
+	return eid;
+}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+public void setEid(int eid) {
+	this.eid = eid;
+}
 
+public String getEname() {
+	return ename;
+}
 
-	public double getSalary() {
-		return salary;
-	}
+public void setEname(String ename) {
+	this.ename = ename;
+}
 
+public double getSalary() {
+	return salary;
+}
 
-	public void setSalary(double salary) {
-		this.salary = salary;
-	}
-
-
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", salary=" + salary + "]";
-	}
-
-	public static void main(String[] args) {
-		Employee e1=new Employee("Amit",10000);
-		Employee e2=new Employee("Amar",50000);
-		
-		//datatype arrayname[]=new datatype[size];
-		Employee emp[]=new Employee[3];
-		emp[0]=e1;
-		emp[1]=e2;
-		emp[2]=new Employee("Sumit",20000);
-		
-		for(int i=0;i<emp.length;i++)
-		{
-			if(emp[i].getSalary()>=20000)
-		 System.out.println(emp[i]);	
-		}
-	}
+public void setSalary(double salary) {
+	this.salary = salary;
+}
 
 }
