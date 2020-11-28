@@ -13,7 +13,7 @@ public Employee(int eid, String ename,double salary) {
 
 @Override
 public String toString() {
-	return "Employee [eid=" + eid + ", ename=" + ename + ", salary=" + salary + "]";
+	return "eid=" + eid + ", ename=" + ename + ", salary=" + salary ;
 }
 
 public int getEid() {

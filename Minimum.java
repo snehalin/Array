@@ -4,12 +4,7 @@ public class Minimum {
 	public static void main(String[] args) {
 		       //0   1 2 
 		int a[]= {7 ,
-				6,
-				9,
-				5,
-				1,
-				78,
-				45};
+				};
         int small=a[0];//7
         int large=a[0];
         for(int i=1;i<a.length;i++)// 

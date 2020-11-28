@@ -19,13 +19,13 @@ public class BubbleSort {
 		int a[]= {8,5,3,6,7};
 		for(int i=0;i<a.length;i++)
 		{ 
-			for(int j=0;j<a.length-i;j++)    
+			for(int j=0;j<a.length-i-1;j++)    
 			{     
-				if(a[i]<a[j])
+				if(a[j]<a[j+1])
 				{
-					int t=a[i];
-					a[i]=a[j];
-					a[j]=t;
+					int t=a[j];
+					a[j]=a[j+1];
+					a[j+1]=t;
 				}
 			}
 			
